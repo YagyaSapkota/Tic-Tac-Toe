@@ -1,6 +1,6 @@
 #Python Program to play Tic Tac Toe Game
-def sum(p,q,r):
-    return p + q +r
+def sum(p,q,r):  #defining sum
+    return p + q +r 
 def printBoard(xState,zState):
     zero = 'X' if xState[0] else ('O' if zState[0] else 0)
     one = 'X' if xState[1] else ('O' if zState[1] else 1)
@@ -28,8 +28,8 @@ def checkwinner(xState,zState):
         return 0
     return -1
 if __name__=="__main__":
-    xState = [0,0,0,0,0,0,0,0,0]
-    zState =[0,0,0,0,0,0,0,0,0]
+    xState = [0,0,0,0,0,0,0,0,0] #for X chance
+    zState =[0,0,0,0,0,0,0,0,0] #for O chance
     turn = 1
     print("Welcome To Tic Tac Toe")
     while(True):
